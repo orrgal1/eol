@@ -1,3 +1,5 @@
+First Blood
+
 Brenden crouched low beside the door, his shoulder pressed to the cold stone, the faint grain of it rough against his sleeve. Breath slipped from him in pale clouds, each one blooming upon the shutterpane, fading, and returning again. Across the frame, Maela stood silent—eyes narrowed, hands poised above the latch, her whole form drawn taut as a bowstring, listening. Behind them, the hearth’s embers pulsed in the gloom, their glow breathing a slow, steady warmth into the wool-woven rugs. From the back hatch, Mireth kept her watch, one hand clenched about the iron latch, her gaze fixed far into the dark.
 
 The hoofbeats began as a whisper beneath the wind. At first only a tremor, they swelled into a steady drum, rolling through the valley until the very stones beneath the cottage seemed to quiver. Brenden’s fingers tightened on the sill. A strange stillness gathered in him—not the stillness of calm, but the bracing pause before a wave strikes. His heart rose to match the rhythm outside, quicker now, until he felt its pulse in his ears.
