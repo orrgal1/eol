@@ -1,4 +1,4 @@
-## Brenden – The Earnest Grounder
+## Brenden – Farmboy - The Earnest Grounder
 
 ### 1. Core Identity
 - **Role**: Young farmhand, son of Eadric and Maela.
