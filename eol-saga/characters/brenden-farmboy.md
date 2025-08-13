@@ -27,7 +27,3 @@
 - **Grief**: Hands still; gaze fixed on something small and near.
 - **Relief/Small Joy**: Shoulders ease, tone lightens slightly.
 
-### 6. Key Lines / Voice Snippets
-- “Ten miles—perhaps less if we cut the forest paths.”
-- “The way’s not easy. The ground rises soon. We’ll skirt the hollow—keep to the pines.”
-- “I think there were none left to follow.”
