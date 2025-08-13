@@ -1,7 +1,7 @@
 ## Maela – The Iron Warden
 
 ### 1. Core Identity
-- **Role**: Brenden’s mother; master of wards and protective runes.
+- **Role**: Brenden’s mother; master of wards and protective runes. Master with the twin blades.
 - **Age & Background**: Early 50s. Trained in the Circle’s arts of warding and ritual magic.
 
 ### 2. Speech Style
@@ -13,7 +13,7 @@
 ### 3. Behavior & Mannerisms
 - **Posture & Movement**: Economical, oriented toward the work at hand.
 - **Stress Tells**: Adjusts grip on blades; checks ward lines repeatedly.
-- **Comfort Zones**: Working in the presence of wards; measured gestures.
+- **Comfort Zones**: Working with a clear task; measured gestures.
 - **Small Quirk**: Tilts head slightly when listening.
 
 ### 4. Interpersonal Patterns
@@ -26,8 +26,3 @@
 - **Fear**: Voice hardens; action quickens.
 - **Grief**: Glance lingers; words shorten.
 - **Relief/Small Joy**: Softens tone, private.
-
-### 6. Key Lines / Voice Snippets
-- “We are in danger, and there is likely to be a fight.”
-- “Your parents were good people, Brenden. They died so that you may live.”
-- “What matters now is that you survive it.”
