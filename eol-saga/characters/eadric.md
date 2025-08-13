@@ -26,8 +26,3 @@
 - **Fear**: Channeled into precise action.
 - **Grief**: Gaze fixed ahead; voice quiets.
 - **Relief/Small Joy**: Slight easing of shoulders, rare dry humor.
-
-### 6. Key Lines / Voice Snippets
-- “Take Brenden. Flee.”
-- “Can you stand?”
-- “That was only the vanguard.”
