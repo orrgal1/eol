@@ -1,7 +1,7 @@
 ## Joss Lowfield – The Outgoing Workhorse
 
 ### 1. Core Identity
-- **Role**: Lowfield son; helps carry Mireth on the stretcher and handles heavy outdoor tasks.
+- **Role**: Lowfield elder son; His fathers son; handles heavy outdoor tasks.
 - **Age & Background**: Mid-20s; strong, broad-shouldered.
 
 ### 2. Speech Style
@@ -26,7 +26,3 @@
 - **Fear**: Breath quickens; focuses harder on physical action.
 - **Grief**: Keeps hands busy.
 - **Relief/Small Joy**: Low chuckle after the work is done.
-
-### 6. Key Lines / Voice Snippets
-- “Nearly there, lad. Don’t stop now.”
-- “Mind your head.”
