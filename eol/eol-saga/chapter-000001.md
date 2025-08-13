@@ -1,4 +1,4 @@
-Embers in the Snow
+# Embers in the Snow
 
 Snow clung to the thatched eaves and the narrow ledges of the windows, softening the world in white silence. Beyond the shuttered panes, dawn touched the eastern ridge, brushing the high crowns of the trees with a thin wash of gold. Within the cottage, the hearth crackled gently—its light casting long amber across the low-beamed ceiling and the wool-woven rugs underfoot. A kettle hissed faintly on its iron hook. The air was steeped in woodsmoke and barley porridge, the scent of both carrying the warmth of a place long lived in.
 
