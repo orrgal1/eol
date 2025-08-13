@@ -26,8 +26,3 @@
 - **Fear**: Works faster, voice firm.
 - **Grief**: Stillness in her hands for a beat, then work resumes.
 - **Relief/Small Joy**: Softer voice; allows herself to sit.
-
-### 6. Key Lines / Voice Snippets
-- “She’s near gone with it. No quitting here.”
-- “If you’ve the strength to argue, you’ve the strength to eat.”
-- “Come back. That’s it. Keep with us.”
