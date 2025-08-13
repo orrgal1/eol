@@ -1,3 +1,5 @@
+# Angel of Death
+
 The snow drifted in through the splintered wall—pale, unhurried—settling upon the cracked stones where Maela lay. Her tunic was dark with blood, the wound hidden beneath her hand; each breath came quick and shallow between clenched teeth.
 
 Brenden knelt beside her, close enough that his shadow fell over her face, trying to nearness alone might anchor her to the world. Beyond the broken threshold, Eadric stood—staff braced in both hands, shoulders squared beneath a torn cloak, his face half-veiled by firelight and snow. He did not turn nor speak, but held his ground as one who bars the way to all the night’s terrors.
