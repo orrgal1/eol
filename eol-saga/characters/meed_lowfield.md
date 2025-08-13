@@ -26,8 +26,3 @@
 - **Fear**: Looks to exits and weapons; speaks more quietly.
 - **Grief**: Stares into middle distance before answering.
 - **Relief/Small Joy**: A rare half-smile or grunt of approval.
-
-### 6. Key Lines / Voice Snippets
-- “Wasn’t just any trouble up there. We saw the sky ourselves—me and the boys.”
-- “Where is she?”
-- “You’re safe enough here, for what that’s worth.”
