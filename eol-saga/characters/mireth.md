@@ -1,13 +1,13 @@
 ## Mireth – The Wry Sentinel
 
 ### 1. Core Identity
-- **Role**: Surviving agent of the Circle of Light; shardbearer.
-- **Age & Background**: ~150 years old. Experienced in travel, combat, and secrecy. Has fought through multiple wars.
+- **Role**: Surviving agent of the Circle of Light.
+- **Age & Background**: In her 50s. Experienced in travel, combat, and secrecy. Has fought through multiple wars.
 
 ### 2. Speech Style
 - **Formality**: Formal, deliberate, but not verbose. Lets silence speak.
 - **Cadence**: Even and controlled; rarely raises her voice. Pauses to weigh words when the truth is dangerous.
-- **Word Choice**: Precise terms; understatement in place of reassurance.
+- **Word Choice**: Precise terms; understatement in place of reassurance; some dry and dark humor; some sarcasm.
 - **Avoids**: Direct emotional statements; overly familiar or casual phrases.
 
 ### 3. Behavior & Mannerisms
@@ -26,8 +26,3 @@
 - **Fear**: Conceals it — focus shifts to tasks, scanning surroundings.
 - **Grief**: Stillness; voice thins slightly.
 - **Relief/Small Joy**: A faint, brief smile — more in the eyes than the mouth.
-
-### 6. Key Lines / Voice Snippets
-- “We cannot stay. More will come.”
-- “Better than being caught blind.”
-- “Then it will be part of you until your last breath.”
