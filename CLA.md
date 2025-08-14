@@ -63,16 +63,11 @@ Contributor’s Payout = (Wc ÷ Wt) × (P × R)
 2. Contributor Pool = 0.25 × $10,000 = $2,500  
 3. Contributor’s Payout = 0.20 × $2,500 = **$500**  
 
-**Notes:**  
-- Words Changed are lifetime totals and never expire.  
-- All payouts are proportional to each Contributor’s share of Words Changed relative to the total.  
-- The Contributor Pool is always exactly 25% of Net Revenue for the period.
-
 **Notes:**
 - Words Changed are cumulative from project start and **never expire**. Contributors continue to share in all future monetization based on their lifetime Words Changed tally.  
 - Later deletions or edits do not reduce credited Words Changed.  
 - Only merged Contributions to `main` count toward Words Changed.  
-- Non-text assets (images, audio, etc.) are not included in Words Changed unless the Copyright Holder publishes a written, project-wide conversion rule for such assets.
+- Non-text assets (images, audio, code, etc.) are not included in Words Changed unless the Copyright Holder publishes a written, project-wide conversion rule for such assets.
 
 **Payout Schedule & Threshold:**  
 - Payments will be made semi-annually, within 60 days after each 6-month period ends.  
