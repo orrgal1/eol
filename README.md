@@ -51,7 +51,7 @@ If you don’t agree to these terms, please do not submit contributions.
 
 ## 🌐 Where to Read
 
-You can read **Edges of Light** more comfortably on [Patreon](https://patreon.com/GarethVale)
+You can read **Edges of Light** more comfortably on [Patreon](https://patreon.com/edgesoflight)
 
 ---
 
