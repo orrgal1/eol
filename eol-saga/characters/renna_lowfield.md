@@ -26,7 +26,3 @@
 - **Fear**: Moves faster, voice quieter.
 - **Grief**: Gaze drops, hands still.
 - **Relief/Small Joy**: Smile quick to surface.
-
-### 6. Key Lines / Voice Snippets
-- “You’re freezing. Drink. Slow.”
-- “She’ll come through. Ma’s seen worse.”
