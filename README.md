@@ -66,7 +66,7 @@ To keep the world of **Edges of Light** strong and welcoming:
 
 ## 📬 Contact
 
-For permissions, media, or collaboration requests:  
+For permissions, media, or other inquiries:  
 📧 **orrgal@gmail.com**
 
 ---
