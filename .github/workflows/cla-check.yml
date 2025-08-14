@@ -1,0 +1,22 @@
+name: CLA Check
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  check-cla:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if CLA checkbox is ticked
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prBody = context.payload.pull_request.body || "";
+            const claChecked = /\- \[x\] I have read and agree to the Contributor License Agreement/i.test(prBody);
+
+            if (!claChecked) {
+              core.setFailed("❌ You must check the CLA agreement box in the PR template before this PR can be merged.");
+            } else {
+              console.log("✅ CLA agreement confirmed.");
+            }
