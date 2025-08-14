@@ -51,11 +51,7 @@ If you don’t agree to these terms, please do not submit contributions.
 
 ## 🌐 Where to Read
 
-You can follow **Edges of Light** across multiple platforms:  
-- 📜 [Substack](https://substack.com/@garethvale) — serialized releases direct to your inbox  
-- 📜 [Wattpad](https://www.wattpad.com/story/398801693-edges-of-light-book-1) — community-driven reading and commenting  
-- 📜 [Royal Road](https://www.royalroad.com/fiction/127461/edges-of-light-book-1) — free serialized chapters for the fantasy community  
-- 📜 [Patreon](https://patreon.com/GarethVale) — support the project and access early chapters  
+You can read **Edges of Light** more comfortably on [Patreon](https://patreon.com/GarethVale)
 
 ---
 
