@@ -14,6 +14,8 @@ By submitting any content (“Contribution”) to this repository, you agree to 
   - Words Changed are **counted forever** — once credited, they remain in the tally for all future revenue-sharing, even if later altered or removed.  
   - Edits that delete or modify another person’s text still count toward the editor’s Words Changed.  
   - Unmerged pull requests do not count.
+- **Word-Equivalent Units (WEU)**: The point value assigned to non-text contributions or qualifying financial support, as defined in Section 6.2.
+- **Patreon WEU Credit**: WEU awarded for paid Patreon support at the rate of **100 WEU per USD $1 pledged**, credited monthly for as long as the pledge is active.
 
 ---
 
@@ -38,28 +40,40 @@ The Copyright Holder is under no obligation to use, merge, publish, or distribut
 ---
 
 ## 6) Revenue Sharing
-If the Copyright Holder commercially publishes or otherwise monetizes the Work (e.g., printed book, e-book, audiobook, licenses, adaptations, or similar), the Copyright Holder will allocate **30% of Net Revenue** as a **Contributor Pool** to be shared among all Contributors.
 
-**Net Revenue** means gross receipts actually received by the Copyright Holder from monetization of the Work **minus** direct, third-party costs for that monetization (e.g., printing, distribution/platform fees, payment processor fees, sales/VAT/GST, reasonable shipping/fulfillment for physical editions). General overhead and unrelated income are excluded.
+The Copyright Holder operates **two distinct revenue-sharing systems**:
 
 ---
 
-### 6.1 Allocation Formula — Text Contributions
+### 6.1 Main Contributor Pool — Book Sales Only
+If the Copyright Holder commercially publishes or otherwise monetizes the Work **through book sales only** (including printed books, e-books, and audiobooks), the Copyright Holder will allocate **30% of Net Book Sales Revenue** as a **Contributor Pool** to be shared among all Contributors.
+
+**Net Book Sales Revenue** means gross receipts actually received by the Copyright Holder from book sales **minus** direct, third-party costs for those sales (e.g., printing, distribution/platform fees, payment processor fees, sales/VAT/GST, reasonable shipping/fulfillment for physical editions).  
+It specifically **excludes** all other forms of revenue, including but not limited to:
+- Patreon membership income
+- Merchandise sales
+- Sponsorships or advertising
+- Licensing, adaptations, or derivative works not directly tied to book sales
+
+---
+
+#### 6.1.1 Allocation Formula — Text, Assets, Patreon WEU
 **Variables:**  
-- **Wc_text** = Lifetime Words Changed (added + deleted) for text.  
-- **WEU_assets** = Lifetime Word-Equivalent Units from non-text assets (see Section 6.2).  
-- **W_translated** = Lifetime number of words translated into another language.  
-- **τ** = Translation factor (default **0.60**).  
-- **R** = Net Revenue for the accounting period.  
-- **P** = Contributor Pool percentage (**30%**).
+- **Wc_text** = Lifetime Words Changed (added + deleted) for text  
+- **WEU_assets** = Lifetime Word-Equivalent Units from non-text assets (see Section 6.2)  
+- **WEU_patreon** = Lifetime WEU from Patreon pledges (100 WEU per $1 pledged)  
+- **W_translated** = Lifetime number of words translated into another language  
+- **τ** = Translation factor (default **0.60**)  
+- **R** = Net Book Sales Revenue for the accounting period  
+- **P** = Contributor Pool percentage (**30%**)
 
 **Contributor’s Lifetime Total:**  
-
-Wc_total = Wc_text + WEU_assets + (τ × W_translated)
+Wc_total = Wc_text + WEU_assets + WEU_patreon + (τ × W_translated)
 
 **Payout Formula:**  
-
 Contributor’s Payout = (Wc_total ÷ ΣWc_total_all_contributors) × (P × R)
+
+Patreon WEU are credited **monthly** while a pledge is active and remain in the tally permanently once earned.
 
 ---
 
@@ -99,6 +113,18 @@ WEU accumulate **forever** — once credited, they remain in the tally for all f
 4) **Audio Team**  
 - 5-minute narrated chapter: Narrator 5 × 100 = **500 WEU**;  
   Mixer/Sound Design 5 × 75 = **375 WEU**.
+
+---
+
+### 6.4 Direct Project Revenue Share — Extras & Side Material
+If a Contributor produces an original, standalone piece of content **outside the main path of the Work** (e.g., side stories, lore compendiums, illustrations, music, videos, or other extras) and the Copyright Holder sells that item separately (e.g., as a paid post on Patreon or via other channels), the following applies:
+
+- The Creator of that item will receive **50% of Net Revenue** from that specific item.  
+- The Copyright Holder retains the remaining **50%**.  
+- This revenue is **not** included in the Main Contributor Pool and does **not** affect WEU tallies.  
+- Net Revenue for extras is defined as gross receipts from the sale of that item minus direct, third-party costs for that sale.
+
+The scope and classification of an item as “extra” will be determined by the Copyright Holder before publication.
 
 ---
 
