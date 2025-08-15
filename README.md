@@ -73,6 +73,5 @@ For permissions, media, or other inquiries:
 
 ## 📅 Roadmap
 
-- Continue weekly chapter releases.  
-- Gather and implement reader and contributor feedback.  
-- Prepare for a future collected edition with full contributor acknowledgment.  
+- Continue frequent chapter releases.  
+- Work towards publishing book1.
