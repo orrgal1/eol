@@ -1,6 +1,6 @@
 # Edges of Light
 
-An epic, living **co-op book project** — free to read here and on [Patreon](https://patreon.com/edgesoflight) — shaped by community insight and imagination, yet safeguarded so it can one day be brought together as a complete, published work.
+An epic, living **collaborative book project** — free to read here and on [Patreon](https://patreon.com/edgesoflight) — shaped by community insight and imagination, yet safeguarded so it can one day be brought together as a complete, published work.
 
 ---
 
