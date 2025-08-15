@@ -37,6 +37,11 @@ We welcome thoughtful contributions from those who share a love for deep worldbu
 2. Make your edits — whether fixing a typo, improving a sentence, or expanding a scene.  
 3. Submit a pull request to the `main` branch.
 
+### 📝 Using Issues
+
+We use GitHub Issues to track problems, suggest improvements, and discuss ideas.  
+If you find a typo, spot an inconsistency in the lore, notice a formatting issue, or have an idea for expanding a scene, please open a new Issue. Be as specific as possible — include chapter numbers, quotes, or links to the relevant section so it’s easy to review. Issues are also welcome for broader feature requests, such as new lore pages or style refinements. This helps keep feedback organized and ensures nothing gets lost.
+
 ### Contributor License Agreement (CLA)
 
 By submitting a pull request, you agree to the [CLA](CLA.md), which means:
