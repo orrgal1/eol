@@ -38,52 +38,75 @@ The Copyright Holder is under no obligation to use, merge, publish, or distribut
 ---
 
 ## 6) Revenue Sharing
-If the Copyright Holder commercially publishes or otherwise monetizes the Work (e.g., printed book, e-book, audiobook, licenses, adaptations, or similar), the Copyright Holder will allocate **25% of Net Revenue** as a **Contributor Pool** to be shared among all Contributors.
+If the Copyright Holder commercially publishes or otherwise monetizes the Work (e.g., printed book, e-book, audiobook, licenses, adaptations, or similar), the Copyright Holder will allocate **30% of Net Revenue** as a **Contributor Pool** to be shared among all Contributors.
 
 **Net Revenue** means gross receipts actually received by the Copyright Holder from monetization of the Work **minus** direct, third-party costs for that monetization (e.g., printing, distribution/platform fees, payment processor fees, sales/VAT/GST, reasonable shipping/fulfillment for physical editions). General overhead and unrelated income are excluded.
 
-**Allocation Formula (for each accounting period):** 
+---
 
+### 6.1 Allocation Formula — Text Contributions
 **Variables:**  
-- **Wc** = Words Changed by a specific Contributor (lifetime total, added + deleted)  
-- **Wt** = Total Words Changed by all Contributors (lifetime total, added + deleted)  
-- **R** = Net Revenue for the accounting period  
-- **P** = Percentage of Net Revenue allocated to the Contributor Pool (25%)
+- **Wc_text** = Lifetime Words Changed (added + deleted) for text.  
+- **WEU_assets** = Lifetime Word-Equivalent Units from non-text assets (see Section 6.2).  
+- **W_translated** = Lifetime number of words translated into another language.  
+- **τ** = Translation factor (default **0.60**).  
+- **R** = Net Revenue for the accounting period.  
+- **P** = Contributor Pool percentage (**30%**).
 
-**Formula:**  
-Contributor’s Payout = (Wc ÷ Wt) × (P × R)
+**Contributor’s Lifetime Total:**  
 
-**Example Calculation:**  
-- Wc = 12,000  
-- Wt = 60,000  
-- R = $10,000  
-- P = 25% (0.25)  
+Wc_total = Wc_text + WEU_assets + (τ × W_translated)
 
-1. Contributor’s share of words = 12,000 ÷ 60,000 = 0.20 (20%)  
-2. Contributor Pool = 0.25 × $10,000 = $2,500  
-3. Contributor’s Payout = 0.20 × $2,500 = **$500**  
+**Payout Formula:**  
 
-**Notes:**
-- Words Changed are cumulative from project start and **never expire**. Contributors continue to share in all future monetization based on their lifetime Words Changed tally.  
-- Later deletions or edits do not reduce credited Words Changed.  
-- Only merged Contributions to `main` count toward Words Changed.  
-- Non-text assets (images, audio, code, etc.) are not included in Words Changed unless the Copyright Holder publishes a written, project-wide conversion rule for such assets.
+Contributor’s Payout = (Wc_total ÷ ΣWc_total_all_contributors) × (P × R)
 
-**Payout Schedule & Threshold:**  
-- Payments will be made semi-annually, within 60 days after each 6-month period ends.  
-- Minimum payout is **$50 USD** per Contributor per period; amounts below the threshold roll forward.  
-- Unclaimed amounts (e.g., if valid payment details are not provided) expire after 24 months and revert to the Copyright Holder.
+---
 
-**Taxes & Compliance:**  
-Contributors are responsible for any taxes on their payouts. The Copyright Holder may require reasonable information (e.g., tax forms) before payment.
+### 6.2 Non-Text Assets & Translations — Word-Equivalent Units (WEU)
+To keep allocation fair across different types of contributions, all non-text work is converted to **Word-Equivalent Units (WEU)** and added to the contributor’s lifetime tally.  
+WEU accumulate **forever** — once credited, they remain in the tally for all future revenue-sharing.
+
+| Contribution Type                          | WEU Credit                                 | Notes |
+|-------------------------------------------|---------------------------------------------|-------|
+| **Original illustration / image**         | **500 WEU** per accepted asset              | For substantial, story-relevant images (hand-drawn or AI-assisted). |
+| **Map / complex diagram**                 | **1,000 WEU** per accepted asset            | Significant design effort with narrative or gameplay relevance. |
+| **Cover / hero artwork**                  | **1,200 WEU** per accepted asset            | Includes design, composition, and refinement. |
+| **Icon set / small graphic bundle**       | **300 WEU** per cohesive bundle             | Group of related small assets used together. |
+| **Audio narration (finished minutes)**    | **100 WEU / min**                           | For final mastered minutes released publicly. |
+| **Original music (finished minutes)**     | **150 WEU / min**                           | Original composition created for the project. |
+| **Sound design / audio edit (finished min)** | **75 WEU / min**                           | Cutting, mixing, SFX, mastering. |
+| **Video trailer / motion edit (finished min)** | **250 WEU / min**                         | Final exported runtime. |
+| **Subtitles / captions (per source min)** | **30 WEU / min**                            | Creating readable timed text. |
+| **Translation (target-language words)**   | **τ × words** (default τ = **0.60**)        | Credit for the translator; the original author’s text is not double-counted. |
+
+---
+
+### 6.3 Examples
+1) **Illustrator + Writer**  
+- 2 accepted illustrations = 2 × 500 = **1,000 WEU**  
+- 3,200 Words Changed (text) = **3,200**  
+- **Wc_total = 1,000 + 3,200 = 4,200**
+
+2) **Translator (EN → ES)**  
+- 18,000 Spanish target-language words  
+- τ = 0.60 → **10,800 WEU**  
+- **Wc_total = 10,800**
+
+3) **Video Editor**  
+- 90-second trailer (1.5 min) → 1.5 × 250 = **375 WEU**
+
+4) **Audio Team**  
+- 5-minute narrated chapter: Narrator 5 × 100 = **500 WEU**;  
+  Mixer/Sound Design 5 × 75 = **375 WEU**.
 
 ---
 
 ## 7) Reporting
 At each payout, the Copyright Holder will provide a brief summary of:
 - Net Revenue for the period,  
-- Total Words Changed counted, and  
-- Each Contributor’s Words Changed used in the allocation.
+- Total Wc_total counted, and  
+- Each Contributor’s Wc_total used in the allocation.
 
 ---
 
