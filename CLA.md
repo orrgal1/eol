@@ -119,9 +119,10 @@ WEU accumulate **forever** — once credited, they remain in the tally for all f
 ### 6.4 Direct Project Revenue Share — Extras & Side Material
 If a Contributor produces an original, standalone piece of content **outside the main path of the Work** (e.g., side stories, lore compendiums, illustrations, music, videos, or other extras) and the Copyright Holder sells that item separately (e.g., as a paid post on Patreon or via other channels), the following applies:
 
-- The Creator of that item will receive **50% of Net Revenue** from that specific item.  
-- The Copyright Holder retains the remaining **50%**.  
-- This revenue is **not** included in the Main Contributor Pool and does **not** affect WEU tallies.  
+- The Creator of that item will receive **75% of Net Revenue** from that specific item.  
+- The Copyright Holder retains the remaining **25%**.  
+- This revenue is **not** included in the Main Contributor Pool.
+- This content does **not** count towards WEU tallies unless creator decides to submit it into the main work.  
 - Net Revenue for extras is defined as gross receipts from the sale of that item minus direct, third-party costs for that sale.
 
 The scope and classification of an item as “extra” will be determined by the Copyright Holder before publication.
