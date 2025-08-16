@@ -60,6 +60,13 @@ You can read **Edges of Light** more comfortably on [Patreon](https://patreon.co
 
 ---
 
+💡 **Friendly Note for Early Readers**  
+Edges of Light is released chapter by chapter, and each book evolves as it’s being written.  
+Until a book is fully published in its complete form, chapters and details may still change — sometimes subtly, sometimes dramatically.  
+Once a book is published, that edition becomes the stable, authoritative version.
+
+---
+
 ## 🤝 Community Guidelines
 
 To keep the world of **Edges of Light** strong and welcoming:  
