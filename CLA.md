@@ -46,7 +46,7 @@ The Copyright Holder operates **two distinct revenue-sharing systems**:
 ---
 
 ### 6.1 Main Contributor Pool — Book Sales Only
-If the Copyright Holder commercially publishes or otherwise monetizes the Work **through book sales only** (including printed books, e-books, and audiobooks), the Copyright Holder will allocate **30% of Net Book Sales Revenue** as a **Contributor Pool** to be shared among all Contributors of that book.
+If the Copyright Holder commercially publishes or otherwise monetizes the Work **through book sales only** (including printed books, e-books, and audiobooks), the Copyright Holder will allocate **75% of Net Book Sales Revenue** as a **Contributor Pool** to be shared among all Contributors of that book.
 
 **Net Book Sales Revenue** means gross receipts actually received by the Copyright Holder from book sales **minus** direct, third-party costs for those sales (e.g., printing, distribution/platform fees, payment processor fees, sales/VAT/GST, reasonable shipping/fulfillment for physical editions).  
 It specifically **excludes** all other forms of revenue, including but not limited to:
@@ -90,18 +90,14 @@ Contributor’s Payout = (Wc_total ÷ ΣWc_total_all_contributors) × (P × R)
 ### 6.2 Non-Text Assets & Translations — Word-Equivalent Units (WEU)
 To keep allocation fair across different types of contributions, all non-text work and translations are converted to **Word-Equivalent Units (WEU)** and added to the contributor’s tally for that book.
 
-| Contribution Type                          | WEU Credit                                 | Notes |
-|-------------------------------------------|---------------------------------------------|-------|
-| **Original illustration / image**         | **500 WEU** per accepted asset              | For substantial, story-relevant images (hand-drawn or AI-assisted). |
-| **Map / complex diagram**                 | **1,000 WEU** per accepted asset            | Significant design effort with narrative or gameplay relevance. |
-| **Cover / hero artwork**                  | **1,200 WEU** per accepted asset            | Includes design, composition, and refinement. |
-| **Icon set / small graphic bundle**       | **300 WEU** per cohesive bundle             | Group of related small assets used together. |
-| **Audio narration (finished minutes)**    | **100 WEU / min**                           | For final mastered minutes released publicly. |
-| **Original music (finished minutes)**     | **150 WEU / min**                           | Original composition created for the project. |
-| **Sound design / audio edit (finished min)** | **75 WEU / min**                           | Cutting, mixing, SFX, mastering. |
-| **Video trailer / motion edit (finished min)** | **250 WEU / min**                         | Final exported runtime. |
-| **Subtitles / captions (per source min)** | **30 WEU / min**                            | Creating readable timed text. |
-| **Translation (target-language words)**   | **τ × words** (default τ = **0.60**)        | Credit for the translator; the original author’s text is not double-counted. |
+| Contribution Type            | WEU Credit Formula                    | Notes |
+|-------------------------------|---------------------------------------|-------|
+| **Text (original writing)**  | **1 WEU × words**                     | Baseline for story content. |
+| **Translation (incl. subtitles)** | **τ × words** (default τ = 0.60) | Only target-language word count is credited. |
+| **Images / illustrations**   | **0.00005 WEU × total pixels**        | width × height from file metadata. |
+| **Audio narration**          | **100 WEU × finished minutes**        | Mastered runtime, rounded up to nearest 0.1 min. |
+| **Original music**           | **150 WEU × finished minutes**        | Composed runtime in minutes. |
+| **Video (trailers / motion)**| **250 WEU × finished minutes**        | Final exported runtime. |
 
 ---
 
