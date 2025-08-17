@@ -1,0 +1,150 @@
+name: Build EPUBs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/chapters/**/*.md'
+
+jobs:
+  build-epubs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: read
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2  # Need previous commit to detect changes
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Detect changed books
+      id: detect-changes
+      run: |
+        # Get list of changed markdown files
+        CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep -E '\.(md)$' | grep -E '(chapters|book[0-9]+)' || true)
+        
+        if [ -z "$CHANGED_FILES" ]; then
+          echo "No chapter files changed"
+          echo "changed_books=" >> $GITHUB_OUTPUT
+          exit 0
+        fi
+        
+        # Extract unique book paths from changed files
+        BOOKS=$(echo "$CHANGED_FILES" | sed -E 's|^([^/]+/[^/]+/[^/]+)/.*|\1|' | sort -u | grep -E '^[^/]+/book[0-9]+/[^/]+$' || true)
+        
+        if [ -z "$BOOKS" ]; then
+          echo "No valid book paths found in changes"
+          echo "changed_books=" >> $GITHUB_OUTPUT
+          exit 0
+        fi
+        
+        echo "Changed books:"
+        echo "$BOOKS"
+        echo "changed_books<<EOF" >> $GITHUB_OUTPUT
+        echo "$BOOKS" >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+    
+    - name: Build EPUBs for changed books
+      if: steps.detect-changes.outputs.changed_books != ''
+      run: |
+        cd tools/epub
+        
+        # Parse the changed books
+        echo "${{ steps.detect-changes.outputs.changed_books }}" | while read -r book_path; do
+          if [ -z "$book_path" ]; then
+            continue
+          fi
+          
+          # Extract components from path (e.g., "eol-saga/book1/english")
+          story=$(echo "$book_path" | cut -d'/' -f1)
+          book=$(echo "$book_path" | cut -d'/' -f2)
+          language=$(echo "$book_path" | cut -d'/' -f3)
+          
+          echo "Building EPUB for: $story/$book/$language"
+          
+          # Find the highest chapter number
+          chapters_dir="../../$book_path/chapters"
+          if [ ! -d "$chapters_dir" ]; then
+            chapters_dir="../../$book_path"
+          fi
+          
+          if [ ! -d "$chapters_dir" ]; then
+            echo "Warning: No chapters directory found for $book_path"
+            continue
+          fi
+          
+          # Find the highest chapter number
+          highest_chapter=$(find "$chapters_dir" -name "chapter-*.md" | sed 's/.*chapter-\([0-9]*\)\.md/\1/' | sort -n | tail -1)
+          
+          if [ -z "$highest_chapter" ]; then
+            echo "Warning: No chapter files found in $chapters_dir"
+            continue
+          fi
+          
+          # Format chapter number with leading zeros
+          formatted_chapter=$(printf "chapter-%03d" "$highest_chapter")
+          
+          echo "Building EPUB up to: $formatted_chapter"
+          
+          # Create output directory
+          output_dir="../../$book_path/epubs"
+          mkdir -p "$output_dir"
+          
+          # Build EPUB
+          python3 epub_builder.py "$story" "$book" "$language" "$formatted_chapter" "$output_dir"
+          
+          if [ $? -eq 0 ]; then
+            echo "✅ Successfully built EPUB for $story/$book/$language"
+          else
+            echo "❌ Failed to build EPUB for $story/$book/$language"
+            exit 1
+          fi
+        done
+    
+    - name: Commit and push EPUBs
+      if: steps.detect-changes.outputs.changed_books != ''
+      run: |
+        # Configure git
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Check if there are any EPUB files to commit
+        if git diff --name-only | grep -q '\.epub$' || git ls-files --others --exclude-standard | grep -q '\.epub$'; then
+          echo "Committing EPUB changes..."
+          git add -A
+          git commit -m "Auto-build EPUBs for changed books [skip ci]"
+          git push
+          echo "✅ EPUB files committed and pushed successfully"
+        else
+          echo "No EPUB changes to commit"
+        fi
+    
+    - name: List generated EPUBs
+      if: steps.detect-changes.outputs.changed_books != ''
+      run: |
+        echo "Generated EPUB files:"
+        find . -name "*.epub" -type f | while read -r epub_file; do
+          echo "📖 $epub_file"
+          ls -lh "$epub_file"
+        done
+        
+        # Create summary for output
+        echo "epub_summary<<EOF" >> $GITHUB_OUTPUT
+        echo "## 📚 EPUB Build Summary" >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "The following EPUB files were generated and committed:" >> $GITHUB_OUTPUT
+        find . -name "*.epub" -type f | while read -r epub_file; do
+          size=$(ls -lh "$epub_file" | awk '{print $5}')
+          echo "- \`$epub_file\` ($size)" >> $GITHUB_OUTPUT
+        done
+        echo "" >> $GITHUB_OUTPUT
+        echo "> EPUB files have been automatically committed to the repository." >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
