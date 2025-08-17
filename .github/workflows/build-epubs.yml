@@ -1,15 +1,17 @@
 name: Build EPUBs
 
 on:
-  pull_request:
+  push:
     branches:
       - main
     paths:
       - '**/chapters/**/*.md'
+  workflow_dispatch:
   
 jobs:
   build-epubs:
     runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/main'
     permissions:
       contents: write
       pull-requests: write
@@ -28,10 +30,10 @@ jobs:
     - name: Detect changed books
       id: detect-changes
       run: |
-        # Get changed files from PR
-        if [ "${{ github.event_name }}" = "pull_request" ]; then
-          # Compare PR branch with main branch
-          CHANGED_FILES=$(git diff --name-only origin/main...HEAD | grep -E '\.(md)$' | grep -E '(chapters|book[0-9]+)' || true)
+        # Get changed files from push to main
+        if [ "${{ github.event_name }}" = "push" ]; then
+          # Compare with previous commit on main
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep -E '\.(md)$' | grep -E '(chapters|book[0-9]+)' || true)
         else
           # Manual trigger - check all chapter files
           echo "Manual trigger, checking all chapter files"
@@ -199,7 +201,7 @@ jobs:
           
           This PR contains automatically generated EPUB files.
           
-          ${{ github.event_name == 'workflow_dispatch' && '**Trigger:** Manual workflow dispatch' || '**Trigger:** Automatic (chapter changes detected)' }}
+          ${{ github.event_name == 'workflow_dispatch' && '**Trigger:** Manual workflow dispatch' || '**Trigger:** Automatic (chapter changes merged to main)' }}
           
           ${{ steps.detect-changes.outputs.changed_books != '' && format('**Changed books:**\n{0}', steps.detect-changes.outputs.changed_books) || '**Scope:** All books in repository' }}
           

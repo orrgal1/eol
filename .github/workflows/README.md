@@ -6,7 +6,7 @@ This directory contains GitHub Actions workflows that automate various tasks for
 
 ### Build EPUBs (`build-epubs.yml`)
 
-**Trigger**: Pull request to `main` branch with changes to chapter files
+**Trigger**: Push to `main` branch with changes to chapter files (after PR merge)
 
 **What it does**:
 - Detects which books have had chapter files modified
@@ -25,7 +25,7 @@ This directory contains GitHub Actions workflows that automate various tasks for
 - A summary is provided in the PR description
 
 **Example**:
-When you create a PR with changes to `eol-saga/book1/english/chapters/chapter-005.md`, the workflow will:
+When you merge a PR with changes to `eol-saga/book1/english/chapters/chapter-005.md` to main, the workflow will:
 1. Detect that `eol-saga/book1/english` has changes
 2. Find the highest chapter number (005)
 3. Build `eol-saga/book1/epubs/eol-saga-book1-english.epub`
