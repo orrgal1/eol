@@ -178,7 +178,7 @@ jobs:
           echo "Committing EPUB changes to main branch"
           git add -A
           git commit -m "Auto-build EPUBs for changed books [skip ci]"
-          git push origin main
+          git push --force origin main
           echo "✅ EPUB files committed to main branch"
         else
           echo "No EPUB changes to commit"
