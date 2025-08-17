@@ -6,9 +6,7 @@ on:
       - main
     paths:
       - '**/chapters/**/*.md'
-      - '**/book*/**/*.md'
-  workflow_dispatch:
-
+  
 jobs:
   build-epubs:
     runs-on: ubuntu-latest
