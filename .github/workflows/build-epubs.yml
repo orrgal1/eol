@@ -1,7 +1,7 @@
 name: Build EPUBs
 
 on:
-  push:
+  pull_request:
     branches:
       - main
     paths:
@@ -20,7 +20,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        fetch-depth: 2  # Need previous commit to detect changes
+        fetch-depth: 0  # Get full history for PR comparison
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -30,13 +30,13 @@ jobs:
     - name: Detect changed books
       id: detect-changes
       run: |
-        # Try to get changed files from the last commit
-        if git rev-parse HEAD~1 >/dev/null 2>&1; then
-          # We have a previous commit, compare with it
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep -E '\.(md)$' | grep -E '(chapters|book[0-9]+)' || true)
+        # Get changed files from PR
+        if [ "${{ github.event_name }}" = "pull_request" ]; then
+          # Compare PR branch with main branch
+          CHANGED_FILES=$(git diff --name-only origin/main...HEAD | grep -E '\.(md)$' | grep -E '(chapters|book[0-9]+)' || true)
         else
-          # No previous commit, check all markdown files in chapters directories
-          echo "No previous commit found, checking all chapter files"
+          # Manual trigger - check all chapter files
+          echo "Manual trigger, checking all chapter files"
           CHANGED_FILES=$(find . -path "*/chapters/*.md" -o -path "*/book*/**/*.md" | grep -E '\.(md)$' || true)
         fi
         
