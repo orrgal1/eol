@@ -59,19 +59,12 @@ It specifically **excludes** all other forms of revenue, including but not limit
 
 #### 6.1.1 Allocation Formula — Text, Assets, Patreon WEU
 **Variables:**  
-- **Wc_text** = Words Changed (added + deleted) during the Book Tally Window  
-- **WEU_assets** = WEU from accepted non-text assets during the Book Tally Window (see Section 6.1.2)  
-- **WEU_patreon** = WEU from Patreon pledges during the Book Tally Window (100 WEU per $1 pledged)  
-- **W_translated** = Number of words translated into another language during the Book Tally Window  
-- **τ** = Translation factor (default **0.60**)  
+- **WEU** = WEU accumulated during the Book Tally Window (see Section 6.1.2)  
 - **R** = Net Book Sales Revenue for the accounting period  
-- **P** = Contributor Pool percentage (**30%**)  
-
-**Contributor’s Total for the Book:**  
-Wc_total = Wc_text + WEU_assets + WEU_patreon + (τ × W_translated)
+- **P** = Contributor Pool percentage (**75%**)
 
 **Payout Formula:**  
-Contributor’s Payout = (Wc_total ÷ ΣWc_total_all_contributors) × (P × R)
+Contributor’s Payout = (WEU/Total WEU) × (P × R)
 
 ---
 
@@ -87,7 +80,7 @@ Contributor’s Payout = (Wc_total ÷ ΣWc_total_all_contributors) × (P × R)
 
 ---
 
-### 6.2 Non-Text Assets & Translations — Word-Equivalent Units (WEU)
+### 6.2 WEU Allocation
 To keep allocation fair across different types of contributions, all non-text work and translations are converted to **Word-Equivalent Units (WEU)** and added to the contributor’s tally for that book.
 
 | Contribution Type            | WEU Credit Formula                    | Notes |
@@ -98,6 +91,7 @@ To keep allocation fair across different types of contributions, all non-text wo
 | **Audio narration**          | **100 WEU × finished minutes**        | Mastered runtime, rounded up to nearest 0.1 min. |
 | **Original music**           | **150 WEU × finished minutes**        | Composed runtime in minutes. |
 | **Video (trailers / motion)**| **250 WEU × finished minutes**        | Final exported runtime. |
+| **Sponsorship on [Patreon](https://patreon.com/edgesoflight)**| **100 WEU per $1**        | Accumulated every month of ongoing subscription. |
 
 ---
 
