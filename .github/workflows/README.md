@@ -21,8 +21,8 @@ This directory contains GitHub Actions workflows that automate various tasks for
 **Output**:
 - EPUB files are generated in `{story}/{book}/epubs/` directories
 - Files are named `{story}-{book}-{language}.epub`
-- A pull request is automatically created with the EPUB changes
-- A summary is provided in the PR description
+- EPUBs are automatically committed and pushed to the main branch
+- A summary is provided in the workflow output
 
 **Example**:
 When you merge a PR with changes to `eol-saga/book1/english/chapters/chapter-005.md` to main, the workflow will:
@@ -30,10 +30,10 @@ When you merge a PR with changes to `eol-saga/book1/english/chapters/chapter-005
 2. Find the highest chapter number (005)
 3. Build `eol-saga/book1/epubs/eol-saga-book1-english.epub`
 4. Include chapters 000-005 with a cover page
-5. Create a pull request with the EPUB changes
+5. Commit and push EPUBs directly to main
 
-**Automatic Pull Request**:
-The workflow automatically creates a pull request with the generated EPUB files. This allows for review before merging the EPUBs to the main branch.
+**Automatic Commit**:
+The workflow automatically commits and pushes EPUB files directly to the main branch. EPUBs are immediately available after the build completes.
 
 ### CLA Check (`cla-check.yml`)
 

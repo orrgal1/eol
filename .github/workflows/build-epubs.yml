@@ -166,58 +166,23 @@ jobs:
           fi
         done
     
-    - name: Create branch and commit EPUBs
+    - name: Commit EPUBs to main
       if: steps.detect-changes.outputs.changed_books != '' || github.event_name == 'workflow_dispatch'
       run: |
         # Configure git
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        # Create a new branch for the EPUB changes
-        BRANCH_NAME="epub-build-$(date +%Y%m%d-%H%M%S)"
-        git checkout -b "$BRANCH_NAME"
-        
         # Check if there are any EPUB files to commit
         if git diff --name-only | grep -q '\.epub$' || git ls-files --others --exclude-standard | grep -q '\.epub$'; then
-          echo "Committing EPUB changes to branch: $BRANCH_NAME"
+          echo "Committing EPUB changes to main branch"
           git add -A
           git commit -m "Auto-build EPUBs for changed books [skip ci]"
-          git push origin "$BRANCH_NAME"
-          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
-          echo "✅ EPUB files committed to branch: $BRANCH_NAME"
+          git push origin main
+          echo "✅ EPUB files committed to main branch"
         else
           echo "No EPUB changes to commit"
         fi
-    
-    - name: Create Pull Request
-      if: (steps.detect-changes.outputs.changed_books != '' || github.event_name == 'workflow_dispatch') && env.BRANCH_NAME != ''
-      uses: peter-evans/create-pull-request@v5
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ env.BRANCH_NAME }}
-        title: "📚 Auto-build EPUBs for changed books"
-        body: |
-          ## 📚 EPUB Build Summary
-          
-          This PR contains automatically generated EPUB files.
-          
-          ${{ github.event_name == 'workflow_dispatch' && '**Trigger:** Manual workflow dispatch' || '**Trigger:** Automatic (chapter changes merged to main)' }}
-          
-          ${{ steps.detect-changes.outputs.changed_books != '' && format('**Changed books:**\n{0}', steps.detect-changes.outputs.changed_books) || '**Scope:** All books in repository' }}
-          
-          **Generated EPUB files:**
-          ${{ steps.detect-changes.outputs.epub_summary }}
-          
-          ---
-          
-          This PR was automatically created by the EPUB build workflow.
-          
-          **Files included:**
-          - EPUB files with cover pages and proper metadata
-          - All chapters up to the highest available chapter number
-          - Proper EPUB structure and navigation
-        commit-message: "Auto-build EPUBs for changed books"
-        delete-branch: true
     
     - name: List generated EPUBs
       if: steps.detect-changes.outputs.changed_books != '' || github.event_name == 'workflow_dispatch'
