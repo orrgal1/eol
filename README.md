@@ -40,7 +40,7 @@ We welcome thoughtful contributions from those who share a love for deep worldbu
 By submitting a pull request, you agree to the [CLA](CLA.md), which means:
 
 - You grant the author full rights to use your contribution in any format.  
-- If the project is ever published commercially, you’ll receive **25% of net revenue**, shared among all contributors based on your share of the total words changed (added + deleted).  
+- If the project is ever published commercially, you’ll receive **25% of net revenue**, shared among all contributors based on your share of the WEU contributed (See "Revenue Sharing" in [CLA](CLA.md)).  
 
 If you don’t agree to these terms, please do not submit contributions.
 
