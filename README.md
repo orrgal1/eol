@@ -83,4 +83,4 @@ For permissions, media, or other inquiries:
 ## 📅 Roadmap
 
 - Continue frequent chapter releases.  
-- Work towards publishing book1.
+- Work towards publishing first book.
