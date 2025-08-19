@@ -53,8 +53,7 @@ If you find a typo, spot an inconsistency in the lore, notice a formatting issue
 
 ## 🌐 Where to Read
 
-- You can read **Edges of Light** more comfortably on [Patreon](https://patreon.com/edgesoflight)
-- Coming soon there will be an "epubs" dir under each book with automaticaly built epubs of the latest version.
+You can read **Edges of Light** more comfortably on [Patreon](https://patreon.com/edgesoflight)
 
 ---
 
