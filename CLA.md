@@ -75,23 +75,7 @@ Contributor’s Payout = (WEU_creative ÷ ΣWEU_creative_all) × (P × R)
 
 ---
 
-### 6.2 Sponsor Pool — Patreon Support (10%)
-In recognition of financial support, the Copyright Holder will allocate **10% of Net Book Sales Revenue** as a **Sponsor Pool** to be shared among Patreon supporters for that book.  
-
-#### 6.2.1 Allocation Formula — Sponsor WEU
-**Variables:**  
-- **WEU_sponsor** = WEU credited at **100 WEU per USD $1 pledged** per month of active subscription during the Book Tally Window  
-- **R** = Net Book Sales Revenue for the accounting period  
-- **P** = Sponsor Pool percentage (**10%**)  
-
-**Payout Formula:**  
-Sponsor’s Payout = (WEU_sponsor ÷ ΣWEU_sponsor_all) × (P × R)  
-
-Sponsor WEU are credited only during the Book Tally Window and do not carry over to future books.
-
----
-
-### 6.3 WEU Allocation (Creative Work)
+### 6.2 WEU Allocation (Creative Work)
 To keep allocation fair across different types of contributions, all non-text work and translations are converted to **Word-Equivalent Units (WEU)** and added to the contributor’s tally for that book.  
 
 | Contribution Type              | WEU Credit Formula                        | Notes |
@@ -105,7 +89,7 @@ To keep allocation fair across different types of contributions, all non-text wo
 
 ---
 
-### 6.4 Examples
+### 6.3 Examples
 1) **Illustrator + Writer**  
 - 2 accepted illustrations (e.g., 1000 WEU total)  
 - 3,200 words (3,200 WEU)  
@@ -120,13 +104,9 @@ To keep allocation fair across different types of contributions, all non-text wo
 
 4) **Audio Team**  
 - 5-minute narrated chapter: Narrator 500 WEU; Mixer 375 WEU → Share of 25% Contributor Pool  
-
-5) **Patreon Sponsor**  
-- $20 pledged for 6 months = $120 → 12,000 WEU_sponsor → Share of 10% Sponsor Pool  
-
 ---
 
-### 6.5 Direct Project Revenue Share — Extras & Side Material
+### 6.4 Direct Project Revenue Share — Extras & Side Material
 If a Contributor produces an original, standalone piece of content **outside the main path of the Work** (e.g., side stories, lore compendiums, illustrations, music, videos, or other extras) and the Copyright Holder sells that item separately (e.g., as a paid post on Patreon or via other channels), the following applies:
 
 - The Creator of that item will receive **75% of Net Revenue** from that specific item.  
