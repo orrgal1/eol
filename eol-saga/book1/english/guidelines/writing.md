@@ -20,6 +20,9 @@
   - **Pull-back epic cadence** for moments of weight or mythic resonance.
 - Subtext over exposition — meaning emerges from action, silence, and
   setting.
+- Avoid meta-commentary about what expressions or gestures "know" or "mean" - show actions directly. 
+- Once in a character's POV, use pronouns rather than repeatedly naming them.
+- In general avoid repeating the same reference to a character over and over in sequence.
 
 ---
 
@@ -28,7 +31,7 @@
 - Poetic but restrained — metaphors arise naturally from the world, never
   ornamental.
 - Era-true diction — no slang or modern idioms.
-- Avoid “as though” / “as if” when possible — use direct phrasing.
+- Avoid empty simlies when possible — use direct phrasing.
 - Avoid tell-tale AI giveaways in rhythm and punctuation: overuse of
   em-dashes, mechanically uniform sentence lengths, repetitive clause
   scaffolds, or overly tidy parallelism. Prefer clear commas and periods;
@@ -86,8 +89,9 @@
 - Use action beats and silence to carry subtext; avoid ping-pong exchanges.
 - Implied understanding is shown through glance or pause — never stated
   outright.
-- Punctuation in speech should be modest and purposeful; use ellipses or
-  dashes only to mark real pauses or cut-offs.
+- Conversations must always flow naturally — never choppy, mechanical, or
+  symbolic. Real people are usually much more verbose than it takes to get a message across. They are rarely conscise. They pause, reflect, think out load, backtrack, etc.
+- Avoid empty humor or overly clever turns of phrase in everyday speech.
 
 ---
 
@@ -107,6 +111,8 @@
 - ❌ No “silent understanding” statements.
 - ❌ No meta-commentary on dialogue — narration must not explain tone,
   intent, or manner of speech; let words, action, and pacing convey it.
+- ❌ No fillers or abstractions where characters can actually live the
+  event.
 - ❌ No AI giveaways: overuse of em-dashes, mechanically even cadences,
   templated beats, or copy-paste sentence frames.
 
