@@ -20,11 +20,9 @@
   - **Pull-back epic cadence** for moments of weight or mythic resonance.
 - Subtext over exposition — meaning emerges from action, silence, and
   setting.
-- Avoid meta-commentary about what expressions or gestures "know" or "mean"
-  — show actions directly. 
+- Avoid meta-commentary about what expressions or gestures "know" or "mean" - show actions directly. 
 - Once in a character's POV, use pronouns rather than repeatedly naming them.
-- In general avoid repeating the same reference to a character over and over
-  in sequence.
+- In general avoid repeating the same reference to a character over and over in sequence.
 
 ---
 
@@ -33,7 +31,7 @@
 - Poetic but restrained — metaphors arise naturally from the world, never
   ornamental.
 - Era-true diction — no slang or modern idioms.
-- Avoid empty similes when possible — use direct phrasing.
+- Avoid empty simlies when possible — use direct phrasing.
 - Avoid tell-tale AI giveaways in rhythm and punctuation: overuse of
   em-dashes, mechanically uniform sentence lengths, repetitive clause
   scaffolds, or overly tidy parallelism. Prefer clear commas and periods;
@@ -92,9 +90,7 @@
 - Implied understanding is shown through glance or pause — never stated
   outright.
 - Conversations must always flow naturally — never choppy, mechanical, or
-  symbolic. Real people are usually much more verbose than it takes to get a
-  message across. They are rarely concise. They pause, reflect, think out
-  loud, backtrack, etc.
+  symbolic. Real people are usually much more verbose than it takes to get a message across. They are rarely conscise. They pause, reflect, think out load, backtrack, etc.
 - Avoid empty humor or overly clever turns of phrase in everyday speech.
 
 ---
@@ -133,16 +129,3 @@
 - Section separators (e.g. `---`) may be used inside chapters to mark a
   clear break between scenes. These should be rare and purposeful, not used
   as a substitute for natural narrative transitions.
-
----
-
-## 12. Negative Instructions
-- When removing or avoiding something (e.g., shouting, smiling,
-  foreshadowing), **do not call attention to its absence**.  
-- Apply the change by omission or by choosing a natural alternative action,
-  never by narrating that the thing was *not* done.  
-- Example:  
-  - ❌ “He went ahead, no shouting.”  
-  - ✅ “He went ahead.”  
-- Actions stand on their own; the reader infers what did not happen from
-  what did.  

@@ -1,0 +1,97 @@
+{
+  "count": 23,
+  "files": [
+    {
+      "label": "chapters/chapter-000",
+      "path": "eol-saga/book1/english/chapters/chapter-000.md"
+    },
+    {
+      "label": "chapters/chapter-001",
+      "path": "eol-saga/book1/english/chapters/chapter-001.md"
+    },
+    {
+      "label": "chapters/chapter-002",
+      "path": "eol-saga/book1/english/chapters/chapter-002.md"
+    },
+    {
+      "label": "chapters/chapter-003",
+      "path": "eol-saga/book1/english/chapters/chapter-003.md"
+    },
+    {
+      "label": "chapters/chapter-004",
+      "path": "eol-saga/book1/english/chapters/chapter-004.md"
+    },
+    {
+      "label": "chapters/chapter-005",
+      "path": "eol-saga/book1/english/chapters/chapter-005.md"
+    },
+    {
+      "label": "chapters/chapter-006",
+      "path": "eol-saga/book1/english/chapters/chapter-006.md"
+    },
+    {
+      "label": "characters/brenden/brenden_as_farmboy",
+      "path": "eol-saga/book1/english/characters/brenden/brenden_as_farmboy.md"
+    },
+    {
+      "label": "characters/eadric/eadric_as_father",
+      "path": "eol-saga/book1/english/characters/eadric/eadric_as_father.md"
+    },
+    {
+      "label": "characters/lowfield_joss/main",
+      "path": "eol-saga/book1/english/characters/lowfield_joss/main.md"
+    },
+    {
+      "label": "characters/lowfield_marra/main",
+      "path": "eol-saga/book1/english/characters/lowfield_marra/main.md"
+    },
+    {
+      "label": "characters/lowfield_meed/main",
+      "path": "eol-saga/book1/english/characters/lowfield_meed/main.md"
+    },
+    {
+      "label": "characters/lowfield_rallin/main",
+      "path": "eol-saga/book1/english/characters/lowfield_rallin/main.md"
+    },
+    {
+      "label": "characters/lowfield_renna/main",
+      "path": "eol-saga/book1/english/characters/lowfield_renna/main.md"
+    },
+    {
+      "label": "characters/lowfield_wenna/main",
+      "path": "eol-saga/book1/english/characters/lowfield_wenna/main.md"
+    },
+    {
+      "label": "characters/maela/maela_as_mother",
+      "path": "eol-saga/book1/english/characters/maela/maela_as_mother.md"
+    },
+    {
+      "label": "characters/mireth/60s",
+      "path": "eol-saga/book1/english/characters/mireth/60s.md"
+    },
+    {
+      "label": "guidelines/writing",
+      "path": "eol-saga/book1/english/guidelines/writing.md"
+    },
+    {
+      "label": "lore/saga_and_lore",
+      "path": "eol-saga/book1/english/lore/saga_and_lore.md"
+    },
+    {
+      "label": "places/brannock_vale/brannock_vale",
+      "path": "eol-saga/book1/english/places/brannock_vale/brannock_vale.md"
+    },
+    {
+      "label": "places/brendens_farm/brendens_farm",
+      "path": "eol-saga/book1/english/places/brendens_farm/brendens_farm.md"
+    },
+    {
+      "label": "places/lowfield_farm/winter",
+      "path": "eol-saga/book1/english/places/lowfield_farm/winter.md"
+    },
+    {
+      "label": "scaffolds/chapter-001.scaffold",
+      "path": "eol-saga/book1/english/scaffolds/chapter-001.scaffold.md"
+    }
+  ]
+}
